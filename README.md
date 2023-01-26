@@ -2,7 +2,7 @@
 
 A collection of C code for the attiny1604 micro-controller. 
 
-Examples:
+Examples: <br />
 Real Time Counter - Attiny1604_RTC.c <br />
 TCA Timer overflow interupt example - timer overflow interrupt.c <br />
 Led Blink (GPIO) - tinyAVR1604_blink.c <br />
