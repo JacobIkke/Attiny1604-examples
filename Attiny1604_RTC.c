@@ -1,8 +1,9 @@
 /*
- * attiny1604 minimal RTC.c
+ *Attiny1604_RTC.c
  *
  * Created: 26-1-2023 00:58:54
- * Author : jacob
+ * Author : PeetHobby (peetGaming)
+ * TB3213 - Getting Started with Real-Time Counter (RTC)
  */ 
 
 #include <avr/io.h>
