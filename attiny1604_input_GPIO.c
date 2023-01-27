@@ -13,7 +13,7 @@
 void gpio_init(void)
 {
 	// PORTA bit 0-7
-	PORTA.OUT  |= PIN1_bm; //PA0 as input
+	PORTA.OUT  |= PIN1_bm; //PA1 as input
 	PORTA.DIR &= ~ PIN1_bm;
 	PORTA.PIN1CTRL |= PORT_PULLUPEN_bm | PORT_ISC_BOTHEDGES_gc; // Set pull up, and trigger on raising and falling edge
 
