@@ -3582,6 +3582,22 @@ IO Module Instances. Mapped to memory.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SLPCTRL - Sleep Controller */
 /* SLPCTRL.CTRLA  bit masks and bit positions */
 #define SLPCTRL_SEN_bm  0x01  /* Sleep enable bit mask. */
@@ -3766,6 +3782,15 @@ IO Module Instances. Mapped to memory.
 #define TCA_SINGLE_DBGRUN_bp  0  /* Debug Run bit position. */
 
 
+
+
+
+
+
+
+
+
+
 /* TCA_SPLIT.CTRLA  bit masks and bit positions */
 #define TCA_SPLIT_ENABLE_bm  0x01  /* Module Enable bit mask. */
 #define TCA_SPLIT_ENABLE_bp  0  /* Module Enable bit position. */
@@ -3845,6 +3870,15 @@ IO Module Instances. Mapped to memory.
 #define TCA_SPLIT_DBGRUN_bp  0  /* Debug Run bit position. */
 
 
+
+
+
+
+
+
+
+
+
 /* TCB - 16-bit Timer Type B */
 /* TCB.CTRLA  bit masks and bit positions */
 #define TCB_ENABLE_bm  0x01  /* Enable bit mask. */
@@ -3898,6 +3932,8 @@ IO Module Instances. Mapped to memory.
 /* TCB.DBGCTRL  bit masks and bit positions */
 #define TCB_DBGRUN_bm  0x01  /* Debug Run bit mask. */
 #define TCB_DBGRUN_bp  0  /* Debug Run bit position. */
+
+
 
 
 /* TWI - Two-Wire Interface */
@@ -3966,6 +4002,8 @@ IO Module Instances. Mapped to memory.
 #define TWI_WIF_bp  6  /* Write Interrupt Flag bit position. */
 #define TWI_RIF_bm  0x80  /* Read Interrupt Flag bit mask. */
 #define TWI_RIF_bp  7  /* Read Interrupt Flag bit position. */
+
+
 
 
 /* TWI.SCTRLA  bit masks and bit positions */
@@ -4193,6 +4231,39 @@ IO Module Instances. Mapped to memory.
 #define USART_RXPL5_bp  5  /* Receiver Pulse Lenght bit 5 position. */
 #define USART_RXPL6_bm  (1<<6)  /* Receiver Pulse Lenght bit 6 mask. */
 #define USART_RXPL6_bp  6  /* Receiver Pulse Lenght bit 6 position. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
