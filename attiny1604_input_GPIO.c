@@ -13,9 +13,9 @@
 void gpio_init(void)
 {
 	// PORTA bit 0-7
-	PORTA.OUT  |= PIN0_bm; //PA0 as input
-	PORTA.DIR &= ~ PIN0_bm;
-	PORTA.PIN0CTRL |= PORT_PULLUPEN_bm | PORT_ISC_BOTHEDGES_gc; // Set pull up, and trigger on raising and falling edge
+	PORTA.OUT  |= PIN1_bm; //PA0 as input
+	PORTA.DIR &= ~ PIN1_bm;
+	PORTA.PIN1CTRL |= PORT_PULLUPEN_bm | PORT_ISC_BOTHEDGES_gc; // Set pull up, and trigger on raising and falling edge
 
 	// PORTB bit 0-3
     	PORTB.OUT |= PIN2_bm; // PB2 as output
@@ -33,7 +33,7 @@ int main(void)
 	
    	 while (1) 
     	{
-		if(~PORTA.IN & PIN0_bm) // check PORTA for changes, bitmask pin0 so we get only that bit.
+		if(~PORTA.IN & PIN1_bm) // check PORTA for changes, bitmask pin0 so we get only that bit.
 		{
 			toggle_led();
 			_delay_ms(200);
