@@ -4,8 +4,8 @@ A collection of C code for the attiny1604 micro-controller. <br />
 <p>Examples:</p>
 <ul>
 <li>Real Time Counter - Attiny1604_RTC.c </li>
-<li>TCA Timer overflow interupt example - timer overflow interrupt.c</li>
-<li>Led Blink (GPIO) - tinyAVR1604_blink.c </li>
+<li>TCA Timer overflow interupt example - Attiny1604_timer_overflow_interrupt.c</li>
+<li>Led Blink (GPIO) - Attiny1604_input_GPIO.c </li>
 <li>Uart TX only library - in folder  /uart_tx/ (main.c, uart_tx.c, uart_tx.h) </li>
 <li>Read input pin(GPIO) - attiny1604_input_GPIO.c </li>
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
