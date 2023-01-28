@@ -11,6 +11,8 @@ A collection of C code for the attiny1604 micro-controller. <br />
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
 </ul>
 <br />
-The iotn1604.h has all the defines, bitmasks, and names of the registers and so. <br />
+The examples are compatible with othere attiny's, like the attiny804, attiny1617, attiny204. attiny1617, attiny404, etc.<br />
+<br />
+If you are looking for all the name difinations, the iotn1604.h has all the defines, bitmasks, and names of the registers and so for teh 1604. <br />
 The examples are written in Microchip studio 7.0 <br />
 
