@@ -19,49 +19,49 @@
 
 int main(void)
 {
-	UART_init();	// default baud is 38400(cpu @3.33Mhz) (can be set to 38400-115200 in uart_tx.c) Set TX(PB2) as output
-	RTC_init();		// setup of the RTC counter
+	UART_init();			// default baud is 38400(cpu @3.33Mhz) (can be set to 38400-115200 in uart_tx.c) Set TX(PB2) as output
+	RTC_init();			// setup of the RTC counter
 
 	//set the time
-	datetimenow.second = 20;
-	datetimenow.minute = 39;
-	datetimenow.hour = 15;
+	datetimenow.second = 20;	// Set seconds
+	datetimenow.minute = 39;	// Set Minutes
+	datetimenow.hour = 15;		// Set Hours
 	
 	//set the time
-	datetimenow.day = 16;
-	datetimenow.month = 3;
-	datetimenow.year = 23; // 20xx
+	datetimenow.day = 16;		// Set day
+	datetimenow.month = 3;		// Set Month
+	datetimenow.year = 23; 		// Set year, 8bit int we use format like this 20xx
 	
     while (1) 
     {
 		// Time
-		uint8_t hours = datetimenow.hour;	// Hours
-		UART_sendInt(hours);				// send integer
-		UART_sendChar(0x3A);				// 0x3A double dot :
+		uint8_t hours = datetimenow.hour;	// Get the Hours
+		UART_sendInt(hours);			// send as integer
+		UART_sendChar(0x3A);			// 0x3A double dot :
 		
-		uint8_t minutes = datetimenow.minute;
-		UART_sendInt(minutes);
-		UART_sendChar(0x3A);				 // 0x3A = double dot :
+		uint8_t minutes = datetimenow.minute;	// Get the Minutes
+		UART_sendInt(minutes);			// send as integer
+		UART_sendChar(0x3A);			// 0x3A = double dot :
 		
-		uint8_t secs = datetimenow.second;
-		UART_sendInt(secs);
-		UART_sendChar(0x20); // 0x20 = space
+		uint8_t secs = datetimenow.second;	// Get the Seconds
+		UART_sendInt(secs);			// send as integer
+		UART_sendChar(0x20); 			// 0x20 = space
 		
 		// Date
-		uint8_t days = datetimenow.day; // Days
-		UART_sendInt(days);
-		UART_sendChar(0x2D); //
+		uint8_t days = datetimenow.day; 	// Get the Days
+		UART_sendInt(days);			// send as integer
+		UART_sendChar(0x2D); 			// 0x2D = line -
 				
-		uint8_t months = datetimenow.month;	// Months
-		UART_sendInt(months);
-		UART_sendChar(0x2D); // 0x2D = line -
+		uint8_t months = datetimenow.month;	// Get the Months
+		UART_sendInt(months);			// send as integer
+		UART_sendChar(0x2D); 			// 0x2D = line -
 		
-		uint8_t years = datetimenow.year;
-		UART_sendString("20");
-		UART_sendInt(years);
+		uint8_t years = datetimenow.year;	// Get the Years, stored in 8bit int, we only count the last two numbers 20xx of the year.
+		UART_sendString("20");			// Print 20 first so we see the correct year in the console
+		UART_sendInt(years);			// send as integer 
 
-		UART_sendChar(0x0A); //LF line feed or newline /n
-		UART_sendChar(0x0D); //CR Carriage return /n
+		UART_sendChar(0x0A); 			//LF line feed or newline /n
+		UART_sendChar(0x0D); 			//CR Carriage return /n
 		
 		_delay_ms(1000);		
     }
