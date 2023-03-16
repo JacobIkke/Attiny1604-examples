@@ -11,5 +11,6 @@
 extern void init_uart(void);
 extern void uart_send(uint8_t byte);
 extern void USART_sendString(char *str);
+extern void UART_sendInt(int *num)
 
 #endif /* UART_H_ */
