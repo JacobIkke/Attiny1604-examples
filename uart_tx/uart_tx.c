@@ -35,7 +35,7 @@ void init_uart(void)
 
 void uart_send(uint8_t byte)
 {
-	// wait for the TX buffer to be empty, see Microchip app note TB3216 Send ìHello Worldî page 8
+	// wait for the TX buffer to be empty, see Microchip app note TB3216 Send ‚ÄúHello World‚Äù page 8
 	while (!(USART0.STATUS & USART_DREIF_bm))
 	{
 	}
@@ -49,4 +49,11 @@ void USART_sendString(char *str)
 	{
 		uart_send(str[i]);
 	}
+}
+
+void UART_sendInt(int *num)
+{
+	char buf[4];
+	itoa(num,buf,10);
+	UART_sendString(buf);
 }
