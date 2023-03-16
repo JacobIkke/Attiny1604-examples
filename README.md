@@ -9,6 +9,7 @@ A collection of C code for the attiny1604 micro-controller. <br />
 <li>Uart TX only library - in folder  /uart_tx/ (main.c, uart_tx.c, uart_tx.h) </li>
 <li>Read input pin(GPIO) - attiny1604_input_GPIO.c </li>
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
+<li>DateTime library - in folder attiny1604_DateTime_lib/ (main.c, datetime1604.c, datetime1604.h, uart_tx.c, uart_tx.h) </li>
 </ul>
 <br />
 The examples are compatible with other attiny's, like the attiny804, attiny1617, attiny204, attiny404, etc.<br />
