@@ -1,4 +1,4 @@
-# DS18b20 Library <br />
+DS18b20 Library
 
 The library is compatible with all tinyAVR microcontrollers. The example code provided is specifically written for attiny1604 but can be easily adapted to work on most tinyAVR series 0, 1, and 2 with little to no modifications required.
 
