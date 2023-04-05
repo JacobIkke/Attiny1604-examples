@@ -15,6 +15,7 @@ A collection of C code for the attiny1604 micro-controller. <br />
 <br />
 The examples are compatible with other attiny's, like the attiny804, attiny1617, attiny204, attiny404, etc. <br />
 The the code is written in Microchip studio 7.0 with GCC compiler<br />
+For the example code(not the librareis) you just copy the code into main.c of new project and will work.
 <br />
 <br />
 <p>List of external tinyAVR compatible libs:</p> 
