@@ -11,6 +11,7 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <li>Uart TX only library - in folder  /uart_tx/ (main.c, uart_tx.c, uart_tx.h) </li>
 <li>Read input pin(GPIO) - attiny1604_input_GPIO.c </li>
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
+<li>PWM x 6 Split mode TCA - Attiny1604_Split_mode_PWMx6.c</li>
 </ul>
 <br />
 <h3>How do I get the code to work?</h3>
