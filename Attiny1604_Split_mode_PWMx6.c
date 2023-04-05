@@ -26,12 +26,12 @@
 	 TCA0.SPLIT.CTRLD = TCA_SPLIT_SPLITM_bm;
 	 
 	 // In split mode timer always counts down, always bottom update.
-	 TCA0.SPLIT.CTRLB =	TCA_SPLIT_LCMP0EN_bm |	// Enable  Compare Channel 0
-	 TCA_SPLIT_LCMP1EN_bm |		// Enable  Compare Channel 1
-	 TCA_SPLIT_LCMP2EN_bm |		// Enable  Compare Channel 2
-	 TCA_SPLIT_HCMP0EN_bm |		// Enable  Compare Channel 3
-	 TCA_SPLIT_HCMP1EN_bm |		// Enable  Compare Channel 4
-	 TCA_SPLIT_HCMP2EN_bm;		// Enable  Compare Channel 5
+	 TCA0.SPLIT.CTRLB =	TCA_SPLIT_LCMP0EN_bm |		// Enable  Compare Channel 0
+	 			TCA_SPLIT_LCMP1EN_bm |		// Enable  Compare Channel 1
+	 			TCA_SPLIT_LCMP2EN_bm |		// Enable  Compare Channel 2
+	 			TCA_SPLIT_HCMP0EN_bm |		// Enable  Compare Channel 3
+	 			TCA_SPLIT_HCMP1EN_bm |		// Enable  Compare Channel 4
+	 			TCA_SPLIT_HCMP2EN_bm;		// Enable  Compare Channel 5
 
 	 // Period is split in two, LPER and HPER, they work independently.
 	 TCA0.SPLIT.LPER = 255;		// Set Period for WO0/WO1/WO2 0-255(8bit)
