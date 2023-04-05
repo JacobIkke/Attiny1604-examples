@@ -45,7 +45,7 @@
 	 TCA0.SPLIT.HCMP1 = 10;		// Duty cycle for WO4 PA4
 	 TCA0.SPLIT.HCMP2 = 10;		// Duty cycle for WO5 PA5
 	 
-	 // Set prescaler and enable timer TCA.
+	 // Set prescaler to the preferred value and enable timer TCA.
 	 TCA0.SPLIT.CTRLA = TCA_SPLIT_CLKSEL_DIV256_gc| TCA_SPLIT_ENABLE_bm;
  }
 
