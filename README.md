@@ -6,7 +6,6 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <li>Real Time Counter - Attiny1604_RTC.c </li>
 <li>TCA Timer overflow interupt example - Attiny1604_timer_overflow_interrupt.c</li>
 <li>Led Blink (GPIO) - Attiny1604_input_GPIO.c </li>
-<li>Uart TX only library - in folder  /uart_tx/ (main.c, uart_tx.c, uart_tx.h) </li>
 <li>Read input pin(GPIO) - attiny1604_input_GPIO.c </li>
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
 <li>PWM x 6 Split mode TCA - Attiny1604_Split_mode_PWMx6.c</li>
@@ -16,6 +15,7 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <ul>
 <li>DateTime library - in folder attiny1604_DateTime_lib/ (main.c, datetime1604.c, datetime1604.h, uart_tx.c, uart_tx.h) </li>
 <li>DS18b20 library - in folder attiny1604_DS18b20_lib/ (main.c, ds18b20.c, ds18b20.h, uart_tx.c, uart_tx.h) </li>
+<li>Uart TX only library - in folder  /uart_tx/ (main.c, uart_tx.c, uart_tx.h) </li>
 </ul>
 
 <br />
