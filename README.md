@@ -3,8 +3,6 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <br />
 <h3>Examples:</h3>
 <ul>
-<li>DateTime library - in folder attiny1604_DateTime_lib/ (main.c, datetime1604.c, datetime1604.h, uart_tx.c, uart_tx.h) </li>
-<li>DS18b20 library - in folder attiny1604_DS18b20_lib/ (main.c, ds18b20.c, ds18b20.h, uart_tx.c, uart_tx.h) </li>
 <li>Real Time Counter - Attiny1604_RTC.c </li>
 <li>TCA Timer overflow interupt example - Attiny1604_timer_overflow_interrupt.c</li>
 <li>Led Blink (GPIO) - Attiny1604_input_GPIO.c </li>
@@ -13,6 +11,13 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
 <li>PWM x 6 Split mode TCA - Attiny1604_Split_mode_PWMx6.c</li>
 </ul>
+<br />
+<h3>Libraries:</h3>
+<ul>
+<li>DateTime library - in folder attiny1604_DateTime_lib/ (main.c, datetime1604.c, datetime1604.h, uart_tx.c, uart_tx.h) </li>
+<li>DS18b20 library - in folder attiny1604_DS18b20_lib/ (main.c, ds18b20.c, ds18b20.h, uart_tx.c, uart_tx.h) </li>
+</ul>
+
 <br />
 <h3>How do I get the code to work?</h3>
 For the code examples, all you need to do is copy the code into the main.c file of your new project and it will work. 
