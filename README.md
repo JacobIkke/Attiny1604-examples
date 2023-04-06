@@ -8,7 +8,8 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <li>Led Blink (GPIO) - Attiny1604_input_GPIO.c </li>
 <li>Read input pin(GPIO) - attiny1604_input_GPIO.c </li>
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
-<li>PWM x 6 Split mode TCA - Attiny1604_Split_mode_PWMx6.c</li>
+<li>PWM 6 x 8bit in Split mode TCA - Attiny1604_Split_mode_PWMx6.c</li>
+<li>PWM 3 x 16bit in Single slope mode TCA - Attiny1604_16bit_PWM_TCA.c </il>
 </ul>
 <br />
 <h3>Libraries:</h3>
