@@ -22,7 +22,7 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <br />
 <h3>How do I get the code to work?</h3>
 For the code examples, all you need to do is copy the code into the main.c file of your new project and it will work. 
-And for the libraries, you must copy or import all of the files that are in the directory.<br />
+And for the libraries, you must copy or import all of the files that are in the directory. And the main.c files have an example of how you use the libery in your own main.c, or use it as startpoint for your own projects. <br />
 <br />
 The examples are compatible with other attiny's, like the attiny804, attiny1617, attiny204, attiny404, etc. <br />
 The the code is written in Microchip studio 7.0 with GCC compiler<br />
