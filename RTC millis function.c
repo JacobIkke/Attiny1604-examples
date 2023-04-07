@@ -11,11 +11,12 @@
 #include <avr/delay.h>
 #include "uart_printf.h"
 
-uint32_t millis_cnt; // Max value 0xffffffff = 4294967295 = 50 days 
+// use uint32 or uint64, comment out wich you don't want to use
+uint32_t millis_cnt; // Max value 0xffffffff = 4294967295 = +-50 days 
+//uint64_t millis_cnt; // Max value 0xffffffffffffffff = 18446744073709551615 = very very long, many years.
 
-//uint64_t millis; // Max value 0xffffffffffffffff = 18446744073709551615 = very very long, many years.
 // one millis tick == +-950us
-// 4294967295 * 980us = +-50 days
+// 4294967295 * 950us = +-50 days
 
 void Millis_clk_init(void);
 uint32_t millis(void);
