@@ -34,7 +34,7 @@ ISR(RTC_PIT_vect){
 
 uint32_t millis(){ 
 	return millis_cnt; 
-	}
+}
 
 int main(void)
 {
