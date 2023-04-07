@@ -3,6 +3,9 @@
  *
  * Created: 7-4-2023 15:01:20
  * Author : PeetHobby @PeetGaming
+ *
+ * This code generate up to three a +-20ms signals with pluse of 1-2ms width. 
+ * WMO1 and WMO2 are disabled by comments(//), and need copy servo_pos function for those two signals yourself. 
  */ 
 
 #define F_CPU 20000000 // F_CPU is also declared in uart_printf.c
