@@ -31,7 +31,7 @@ void Servo_16bit_PWM_init(void){
 	//TCA0.SINGLE.CTRLB |=  TCA_SINGLE_CMP2EN_bm;	// Enable WMO2 PB3
 	
 	TCA0.SINGLE.CTRLB |=  TCA_SINGLE_WGMODE_SINGLESLOPE_gc;	// Set the waveform generator to single slope
-	TCA0.SINGLE.PER = 0xffff;	// Set Period (16bit 0-65535)
+	TCA0.SINGLE.PER = 0xc3ff;	// Set Period (16bit 0-65535). Can fine tune the frequency her, Servo 40-200Hz
 	
 	// Set default initial compare register values
 	TCA0.SINGLE.CMP0 = 0;		// Duty cycle for WO0 PB0 (16bit 0-65535)
