@@ -3,13 +3,14 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <br />
 <h3>Examples:</h3>
 <ul>
-<li>Real Time Counter - Attiny1604_RTC.c </li>
+<li>Real Time Counter 1sec. periodic interupt - Attiny1604_RTC.c </li>
 <li>TCA Timer overflow interupt example - Attiny1604_timer_overflow_interrupt.c</li>
 <li>Led Blink (GPIO) - Attiny1604_input_GPIO.c </li>
 <li>Read input pin(GPIO) - attiny1604_input_GPIO.c </li>
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
 <li>PWM 6 x 8bit in Split mode TCA - Attiny1604_Split_mode_PWMx6.c</li>
 <li>PWM 3 x 16bit in Single slope mode TCA - Attiny1604_16bit_PWM_TCA.c </il>
+<li>Use RTC for millis() function (system tick) - RTC millis function.c </il>
 </ul>
 <br />
 <h3>Libraries:</h3>
