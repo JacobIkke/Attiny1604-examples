@@ -9,7 +9,6 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/delay.h>
-#include "uart_printf.h"
 
 // use uint32 or uint64, comment out wich you don't want to use
 uint32_t millis_cnt; // Max value 0xffffffff = 4294967295 = +-50 days 
