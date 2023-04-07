@@ -44,7 +44,7 @@ void Servo_16bit_PWM_init(void){
 
 void servo_pos(uint32_t angle){
 	uint32_t pulse_us = 1000 + (angle * 1000 / 180);	// convert the angle to pulse width in microseconds, between 1000-2000us
-	uint32_t timer_counts = (pulse_us  - 600) * 3.75;	// convert the pulse width to timer counts value
+	uint32_t timer_counts = (pulse_us  - 600) * 3.75;	// convert the pulse width to timer counts value, offset(-600 in my case) to 1ms and multply to increase the value. 
 	TCA0.SINGLE.CMP0 = timer_counts;					// set timer1 compare register with the calculated counts value
 }
 
