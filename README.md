@@ -12,6 +12,7 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <li>PWM 3 x 16bit in Single slope mode TCA - Attiny1604_16bit_PWM_TCA.c </il>
 <li>Use RTC for millis() function (system tick) - RTC millis function.c </il>
 <li>How to use the Internal temperature sensor - in directory /Attiny1604_internal_temperature_sensor/(main.c, uart_printf.c, uart_printf.h)</li>
+<li> How to Control up to three Servo with 16bit PWM signals - Attiny1604_Servo_control_16bit.c</li>
 </ul>
 <br />
 <h3>Libraries:</h3>
