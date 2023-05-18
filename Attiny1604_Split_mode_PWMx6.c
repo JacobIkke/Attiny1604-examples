@@ -58,7 +58,7 @@ int main(void)
     while (1) 
     {
 		// Simple example how to changes the PWM output value for one of the outputs
-		// Count will have value between 0-255 and will be stored in LCMP0 so the output WO0 goes form zero to full duty. 
+		// Count will have a value between 0-255 and will be stored in LCMP0, the output WO0 goes form zero to full duty. 
 		// This is just one output but you can do that will all six outputs. 
 		TCA0.SPLIT.LCMP0 = count;	
 		
