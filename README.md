@@ -5,6 +5,7 @@ A collection of C code for the attiny1604 and other compatible micro-controllers
 <ul>
 <li>Real Time Counter 1sec. periodic interupt - Attiny1604_RTC.c </li>
 <li>TCA Timer overflow interupt example - Attiny1604_timer_overflow_interrupt.c</li>
+<li>UART example with interrupt - Atiny1604_UART_interrupt.c</li>
 <li>Led Blink (GPIO) - Attiny1604_input_GPIO.c </li>
 <li>Read input pin(GPIO) - attiny1604_input_GPIO.c </li>
 <li>External Pin Change Interrupt - Attiny1604_ext_pin_interrupt.c </li>
